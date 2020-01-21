@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="90dp"
+    android:layout_height="wrap_content"
+    android:layout_centerVertical="true"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:padding="5dp"
+        android:background="@drawable/btn_layout_bck">
+
+        <com.standardyze.customViews.CustomTextViewMedium
+            android:id="@+id/role_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="cook"
+            android:textColor="#6F6889"
+            android:textSize="10sp"
+
+            />
+    </RelativeLayout>
+
+</LinearLayout>

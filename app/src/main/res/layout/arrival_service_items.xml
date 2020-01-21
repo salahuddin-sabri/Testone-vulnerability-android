@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_margin="5dp"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/question_viewLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:orientation="horizontal">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="32dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="5dp"
+            app:cardBackgroundColor="@color/colorPrimaryDark"
+            app:contentPadding="10dp">
+
+            <com.standardyze.customViews.CustomTextViewMedium
+                android:id="@+id/serial_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="1"
+                android:textColor="@android:color/white"
+                android:textSize="14sp" />
+
+        </androidx.cardview.widget.CardView>
+
+        <com.standardyze.customViews.CustomTextViewBook
+            android:id="@+id/questions"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="6dp"
+            android:layout_marginLeft="6dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="5dp"
+            android:text="Telephone conversation is calm and clear"
+            android:textColor="#291F4D"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/options_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/question_viewLayout"
+        android:layout_centerHorizontal="true"
+        android:background="#EAECEF"
+        android:gravity="center"
+        android:padding="5dp">
+
+        <LinearLayout
+            android:id="@+id/none_layout"
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/none_img"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_margin="15dp"
+                android:src="@drawable/none_ic" />
+
+        </LinearLayout>
+
+
+        <View
+            android:id="@+id/view1"
+            android:layout_width="0.3dp"
+            android:layout_height="30dp"
+            android:layout_margin="10dp"
+            android:layout_toEndOf="@id/none_layout"
+            android:layout_toRightOf="@id/none_layout"
+            android:background="#B3B3B3" />
+
+
+        <LinearLayout
+            android:id="@+id/yes_layout"
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/view1"
+            android:layout_toRightOf="@id/view1">
+
+            <ImageView
+                android:id="@+id/yes_img"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_margin="15dp"
+
+                android:src="@drawable/yes_ic" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/second_view"
+            android:layout_width="0.3dp"
+            android:layout_height="30dp"
+            android:layout_margin="10dp"
+            android:layout_toEndOf="@id/yes_layout"
+            android:layout_toRightOf="@id/yes_layout"
+            android:background="#B3B3B3" />
+
+        <LinearLayout
+            android:id="@+id/no_layout"
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/second_view"
+            android:layout_toRightOf="@id/second_view">
+
+            <ImageView
+                android:id="@+id/no_img"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_margin="15dp"
+                android:src="@drawable/no_ic" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/third_view"
+            android:layout_width="0.3dp"
+            android:layout_height="30dp"
+            android:layout_margin="10dp"
+            android:layout_toEndOf="@id/no_layout"
+            android:layout_toRightOf="@id/no_layout"
+            android:background="#B3B3B3" />
+
+        <LinearLayout
+            android:id="@+id/comment_layout"
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/third_view"
+            android:layout_toRightOf="@id/third_view">
+
+            <ImageView
+                android:id="@+id/comment_img"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_margin="15dp"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:src="@drawable/comment_ic" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/fourth_view"
+            android:layout_width="0.3dp"
+            android:layout_height="30dp"
+            android:layout_margin="10dp"
+            android:layout_toEndOf="@id/comment_layout"
+            android:layout_toRightOf="@id/comment_layout"
+            android:background="#B3B3B3" />
+
+
+        <LinearLayout
+            android:id="@+id/image_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/fourth_view"
+            android:layout_toRightOf="@id/fourth_view">
+
+            <ImageView
+                android:id="@+id/img"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_margin="15dp"
+                android:src="@drawable/img_ic" />
+
+
+
+        </LinearLayout>
+
+      <!--  <com.victor.loading.rotate.RotateLoading
+            android:id="@+id/rotateloading"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_margin="10dp"
+            app:loading_color="@color/colorPrimary"
+            android:layout_toRightOf="@id/fourth_view"
+            app:loading_width="5dp"
+            tools:ignore="UnknownIdInLayout"
+            android:layout_toEndOf="@id/fourth_view" />-->
+        <!--   <com.victor.loading.rotate.RotateLoading
+               android:id="@+id/rotateloadingLogin"
+               android:layout_width="30dp"
+               android:layout_height="30dp"
+               android:layout_toEndOf="@id/fourth_view"
+               android:layout_toRightOf="@id/fourth_view"
+               android:layout_margin="15dp"
+               app:loading_color="@color/colorPrimary"
+               app:loading_width="5dp"
+           />-->
+
+        <RelativeLayout
+            android:id="@+id/hidden_view"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@id/image_layout"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="5dp"
+            android:background="@drawable/edtxt_background"
+            android:gravity="center"
+            android:visibility="gone"
+
+          >
+
+            <EditText
+                android:id="@+id/commement_edtxt"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:background="@android:color/transparent"
+                android:gravity="left"
+                android:inputType="textMultiLine"
+                android:textColor="#605E68"
+                android:textSize="12sp"
+
+
+                />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

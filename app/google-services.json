@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "56167540173",
+    "firebase_url": "https://standardyze.firebaseio.com",
+    "project_id": "standardyze",
+    "storage_bucket": "standardyze.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:56167540173:android:765024f7497bdc4fd19084",
+        "android_client_info": {
+          "package_name": "com.standardyze"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "56167540173-nqlchh3dk5anq5lca70nctfps8132p19.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBkc9bUtAg0QjBMPqYpgPEJ-4lynM_qyOk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "56167540173-nqlchh3dk5anq5lca70nctfps8132p19.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "56167540173-f0taf52con0fa5hqj270fg01ekuo14jb.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.Hivelet.Standardyze"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

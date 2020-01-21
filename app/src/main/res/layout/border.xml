@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:padding="5dp"
+    android:background="@color/colorPrimaryDark"
+    android:orientation="horizontal">
+
+    <com.standardyze.customViews.CustomTextViewBook
+        android:id="@+id/text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       android:layout_marginLeft="22dp"
+        android:layout_centerVertical="true"
+        android:text="@string/categories_of_assessments"
+        android:textColor="@android:color/white"
+        android:textSize="14sp"
+        android:padding="5dp"
+        android:layout_marginStart="23dp" />
+
+    <com.standardyze.customViews.CustomTextViewBook
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+
+        android:layout_alignParentRight="true"
+        android:gravity="center_vertical"
+        android:layout_marginEnd="22dp"
+        android:text="@string/score_txt"
+        android:padding="5dp"
+        android:textColor="@android:color/white"
+
+        android:textSize="14sp"
+        android:layout_marginRight="25dp" />
+</RelativeLayout>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardview"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="4dp"
+    app:cardCornerRadius="3dp"
+    app:cardMaxElevation="10dp">
+
+    <!-- <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"xmlns:app="http://schemas.android.com/apk/res-auto"xmlns:tools="http://schemas.android.com/tools"android:layout_width="match_parent"android:layout_height="wrap_content"android:background="@drawable/dashboard_bg"tools:targetApi="lollipop"><TextViewandroid:id="@+id/assessment_title"android:layout_width="wrap_content"android:layout_height="wrap_content"android:layout_marginStart="48dp"android:layout_marginTop="32dp"android:text="@string/assessment_title"android:textColor="#000"android:textSize="18sp"app:layout_constraintEnd_toEndOf="parent"app:layout_constraintHorizontal_bias="0.006"app:layout_constraintStart_toStartOf="parent"app:layout_constraintTop_toTopOf="parent" /><TextViewandroid:id="@+id/property_txt"android:layout_width="wrap_content"android:layout_height="wrap_content"android:layout_marginStart="16dp"android:layout_marginTop="8dp"android:layout_marginEnd="16dp"android:text="@string/property_txt"android:textSize="16sp"app:layout_constraintEnd_toEndOf="parent"app:layout_constraintHorizontal_bias="0.107"app:layout_constraintStart_toStartOf="parent"app:layout_constraintTop_toBottomOf="@+id/assessment_title"></TextView><TextViewandroid:id="@+id/trainer_txt"android:layout_width="wrap_content"android:layout_height="wrap_content"android:layout_marginStart="48dp"android:layout_marginTop="24dp"android:layout_marginBottom="8dp"android:text="@string/trainer"android:textSize="14sp"app:layout_constraintBottom_toBottomOf="parent"app:layout_constraintStart_toStartOf="parent"app:layout_constraintTop_toBottomOf="@+id/property_txt" /><TextViewandroid:id="@+id/status_txt"android:layout_width="35dp"android:layout_height="19dp"android:layout_marginStart="16dp"android:layout_marginTop="16dp"android:layout_marginEnd="24dp"android:layout_marginBottom="8dp"android:text="@string/status_txt"android:textSize="14sp"app:layout_constraintBottom_toBottomOf="parent"app:layout_constraintEnd_toEndOf="parent"app:layout_constraintHorizontal_bias="0.959"app:layout_constraintStart_toEndOf="@+id/trainer_txt"app:layout_constraintTop_toBottomOf="@+id/score_txt"app:layout_constraintVertical_bias="1.0" /><TextViewandroid:id="@+id/score_txt"android:layout_width="wrap_content"android:layout_height="wrap_content"android:layout_marginTop="36dp"android:text="@string/score"android:textColor="@color/colorPrimary"android:textSize="25sp"app:layout_constraintEnd_toEndOf="parent"app:layout_constraintHorizontal_bias="0.877"app:layout_constraintStart_toEndOf="@+id/assessment_title"app:layout_constraintTop_toTopOf="parent" /> </androidx.constraintlayout.widget.ConstraintLayout>-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/summary"
+        android:padding="5dp">
+
+        <com.standardyze.customViews.CustomTextViewMedium
+            android:id="@+id/assessment_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:gravity="center_vertical"
+            android:text="@string/assessment_title"
+            android:textColor="#474748"
+            android:textSize="12sp" />
+
+        <com.standardyze.customViews.CustomTextViewBook
+            android:id="@+id/property_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/assessment_title"
+            android:layout_margin="5dp"
+            android:text="@string/property_txt"
+            android:textColor="#69768E"
+            android:textSize="13sp" />
+
+        <com.standardyze.customViews.CustomTextViewBook
+            android:id="@+id/trainer_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/property_txt"
+            android:layout_margin="5dp"
+            android:textColor="#7586A0"
+            android:text="@string/trainer"
+            android:textSize="13sp" />
+
+        <com.standardyze.customViews.CustomTextViewBook
+            android:id="@+id/status_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/score_txt"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_margin="6dp"
+            android:text="@string/status_txt"
+            android:textColor="#7586A0"
+            android:textSize="11sp" />
+
+        <com.standardyze.customViews.CustomTextViewBook
+            android:id="@+id/date_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/property_txt"
+
+
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_margin="6dp"
+            android:text="date"
+            android:textColor="#7586A0"
+            android:textSize="11sp" />
+
+        <com.standardyze.customViews.CustomTextViewBold
+            android:id="@+id/score_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:padding="5dp"
+            android:text="@string/score"
+            android:textColor="@color/colorPrimary"
+            android:textSize="21sp" />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

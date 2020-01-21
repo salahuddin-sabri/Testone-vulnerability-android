@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/view"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="120dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/summary"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.standardyze.customViews.CustomTextViewBook
+            android:id="@+id/question_txt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:text="Telephone conversation is calm and clear"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.standardyze.customViews.CustomTextViewLight
+            android:id="@+id/comment_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:text="Comment"
+            android:textColor="@color/colorAccent"
+            android:textSize="14sp"
+            app:layout_constraintStart_toEndOf="@+id/response_img"
+            app:layout_constraintTop_toBottomOf="@+id/question_txt" />
+
+        <com.standardyze.customViews.CustomTextViewMedium
+            android:id="@+id/comment_edtxt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="32dp"
+            android:layout_marginRight="32dp"
+            android:ellipsize="end"
+            android:text="Leverage agile frameworks to        bjghjjhjhjhjhjhjhjhjhjhjhjjgjgjgjgjgjgjprovide a robust synopsis for high level overviews. Iterative approaches to corporate strategy."
+            android:textSize="11sp"
+            app:layout_constraintEnd_toStartOf="@+id/selection_txt"
+            app:layout_constraintStart_toStartOf="@+id/comment_txt"
+            app:layout_constraintTop_toBottomOf="@+id/comment_txt" />
+
+        <com.standardyze.customViews.CustomTextViewBook
+            android:id="@+id/selection_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:text="YES"
+            android:textColor="@color/colorPrimary"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/question_txt"
+            app:layout_constraintTop_toBottomOf="@+id/question_txt" />
+
+        <ImageView
+            android:id="@+id/response_img"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="8dp"
+
+            app:layout_constraintStart_toStartOf="@+id/question_txt"
+            app:layout_constraintTop_toBottomOf="@+id/question_txt" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

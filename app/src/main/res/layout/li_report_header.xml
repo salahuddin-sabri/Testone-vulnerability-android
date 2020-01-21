@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorPrimary"
+    android:minHeight="?android:attr/listPreferredItemHeightSmall">
+
+    <com.standardyze.customViews.CustomTextViewBold
+        android:id="@+id/tv_header_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@+id/tv_report_value"
+        android:layout_toRightOf="@+id/tv_report_value"
+        android:maxLines="2"
+        android:textAllCaps="true"
+        android:textColor="@android:color/white"
+        android:textSize="13sp"
+        tools:text="@string/header_title" />
+
+    <ImageView
+        android:id="@+id/tv_report_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="@dimen/bounds_l"
+        android:layout_marginRight="@dimen/bounds_l"
+        android:src="@drawable/email_ic"
+        android:textSize="13sp" />
+</RelativeLayout>

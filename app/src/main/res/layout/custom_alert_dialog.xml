@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+  android:layout_margin="15dp"
+    android:layout_gravity="center"
+    android:layout_centerHorizontal="true"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/ok_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/view"
+        android:textSize="16sp"
+        android:textColor="@color/colorPrimary"
+        android:layout_centerHorizontal="true"
+        android:text="@string/dg_button_positive_ok"
+        android:fontFamily="sans-serif-medium"
+        android:background="@android:color/transparent"
+        />
+
+    <LinearLayout
+        android:id="@+id/yesNoLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:visibility="gone"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/view"
+        >
+        <Button
+            android:id="@+id/no_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimary"
+            android:textSize="14sp"
+            android:gravity="left|center_vertical"
+            android:background="@android:color/transparent"
+            android:text="No"/>
+        <Button
+            android:id="@+id/yes_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:gravity="right|center_vertical"
+            android:textColor="@color/colorPrimary"
+            android:background="@android:color/transparent"
+            android:text="Yes"/>
+
+    </LinearLayout>
+
+
+
+    <com.standardyze.customViews.CustomTextViewBook
+        android:id="@+id/alertText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/alertTitle"
+    android:layout_centerHorizontal="true"
+    android:layout_margin="15dp"
+android:lineSpacingExtra="5dp"
+        android:gravity="center"
+        android:textSize="15sp"
+        android:textColor="#69768E"
+        android:text="@string/dummytext" />
+
+    <com.standardyze.customViews.CustomTextViewMedium
+
+        android:id="@+id/alertTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="4dp"
+        android:text="@string/alert"
+        android:textColor="@color/alert"
+        android:textSize="16sp" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="200dp"
+        android:layout_height="0.5dp"
+        android:layout_centerInParent="true"
+        android:layout_below="@id/alertText"
+        android:layout_margin="10dp"
+        android:background="@android:color/background_dark"
+
+        />
+
+</RelativeLayout>

@@ -1,0 +1,583 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scroll"
+    android:layout_margin="5dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="#7355CF"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.standardyze.customViews.CustomTextViewBold
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="14dp"
+                android:text="Standardyze - Service Standards Assessment App"
+                android:textColor="#fff"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="28dp"
+                android:layout_height="25dp"
+                android:layout_margin="10dp"
+                android:visibility="gone"
+                android:background="@android:color/white"
+                android:src="@drawable/frontlogo"
+
+                />
+
+
+        </LinearLayout>
+
+        <com.standardyze.customViews.CustomTextViewBold
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="14dp"
+            android:layout_marginLeft="14dp"
+            android:layout_marginTop="16dp"
+            android:text="General Information"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="14dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="14dp"
+            android:elevation="12dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <com.standardyze.customViews.CustomTextViewBook
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginTop="16dp"
+                    android:text="Trainer Name:"
+                    android:textColor="@android:color/black"
+                    android:textSize="11sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+                <com.standardyze.customViews.CustomTextViewMedium
+                    android:id="@+id/trainer_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginEnd="4dp"
+                    android:layout_marginRight="4dp"
+                    android:text="Calvin Banks"
+                    android:textSize="11sp"
+                    app:layout_constraintBottom_toTopOf="@id/textView3"
+                    app:layout_constraintStart_toEndOf="@+id/textView2"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+                <com.standardyze.customViews.CustomTextViewBook
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginTop="16dp"
+                    android:text="Meal Period:"
+                    android:textColor="@android:color/black"
+
+                    android:textSize="11sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+                <com.standardyze.customViews.CustomTextViewMedium
+                    android:id="@+id/mealperiod"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginLeft="4dp"
+                    android:text="N/A"
+                    android:textSize="11sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/textView3"
+                    app:layout_constraintStart_toEndOf="@+id/textView3"
+                    app:layout_constraintTop_toTopOf="@+id/textView3" />
+
+                <com.standardyze.customViews.CustomTextViewBook
+                    android:id="@+id/depart_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:text="Department Name:"
+                    android:textColor="@android:color/black"
+
+                    android:textSize="11sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+                <com.standardyze.customViews.CustomTextViewMedium
+                    android:id="@+id/departmenr_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginLeft="4dp"
+                    android:text="Beachwalk Bistro &amp; Bar"
+                    android:textSize="11sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/depart_text"
+                    app:layout_constraintStart_toEndOf="@+id/depart_text"
+                    app:layout_constraintTop_toTopOf="@+id/depart_text" />
+
+                <com.standardyze.customViews.CustomTextViewBook
+                    android:id="@+id/textView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="16dp"
+                    android:text="Time and Date:"
+                    android:textColor="@android:color/black"
+                    android:textSize="11sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/textView2"
+                    app:layout_constraintStart_toEndOf="@+id/trainer_name"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+                <com.standardyze.customViews.CustomTextViewMedium
+                    android:id="@+id/dateTime"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginStart="4dp"
+                    android:layout_marginLeft="4dp"
+                    android:text="22-Jul-2019 | 06:22 PM"
+                    android:textSize="10sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/textView4"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/textView4"
+                    app:layout_constraintTop_toTopOf="@+id/textView4" />
+
+
+                <com.standardyze.customViews.CustomTextViewBook
+                    android:id="@+id/roomtxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginTop="16dp"
+                    android:text="Room Number:"
+                    android:textColor="@android:color/black"
+                    android:textSize="11sp"
+                    app:layout_constraintStart_toStartOf="@+id/textView4"
+                    app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+                <com.standardyze.customViews.CustomTextViewMedium
+                    android:id="@+id/room_number"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginStart="4dp"
+
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginEnd="4dp"
+                    android:layout_marginRight="4dp"
+                    android:text="N/A"
+                    android:textSize="10sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/roomtxt"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/roomtxt"
+                    app:layout_constraintTop_toTopOf="@+id/roomtxt" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:weightSum="2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cardView">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.96"
+                android:orientation="vertical">
+
+                <com.standardyze.customViews.CustomTextViewMedium
+                    android:id="@+id/employee_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="16dp"
+                    android:background="#291F4D"
+                    android:paddingLeft="6dp"
+                    android:paddingTop="6dp"
+                    android:paddingBottom="6dp"
+                    android:text="Employees(s)"
+                    android:textColor="#FFF" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recycler_view_employee"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edtxt_background"
+                    app:layout_constraintStart_toStartOf="@id/employee_txt"
+                    app:layout_constraintTop_toBottomOf="@id/employee_txt"
+                    tools:listitem="@layout/employee_layout" />
+
+                <!--  <androidx.cardview.widget.CardView
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:layout_marginLeft="16dp"
+                      android:layout_marginTop="12dp"
+                      android:layout_marginBottom="12dp"
+                      >
+
+                      <com.standardyze.customViews.CustomTextViewBook
+                          android:layout_width="wrap_content"
+                          android:id="@+id/tv_employee"
+                          android:layout_height="wrap_content"
+                          android:padding="4dp"
+                          android:text="Hello" />
+
+                  </androidx.cardview.widget.CardView>
+  -->
+            </LinearLayout>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.08" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.96"
+                android:orientation="vertical">
+
+
+                <com.standardyze.customViews.CustomTextViewMedium
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginRight="16dp"
+                    android:background="#291F4D"
+                    android:paddingLeft="6dp"
+                    android:paddingTop="6dp"
+                    android:paddingBottom="6dp"
+                    android:text="Roles Covered"
+                    android:textColor="#FFF" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recycler_view_roles"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toStartOf="@id/roles_txt"
+                    app:layout_constraintTop_toBottomOf="@+id/roles_txt"
+                    tools:listitem="@layout/employee_layout" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:weightSum="2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.96"
+                android:orientation="vertical">
+
+                <com.standardyze.customViews.CustomTextViewBold
+                    android:id="@+id/customTextViewBold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="8dp"
+                    android:text="Results"
+                    android:textStyle="bold" />
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardView4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="14dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginBottom="8dp">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/summary">
+
+                        <com.standardyze.customViews.CustomTextViewMedium
+                            android:id="@+id/customTextViewMedium"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="4dp"
+                            android:layout_marginLeft="4dp"
+                            android:layout_marginEnd="4dp"
+                            android:layout_marginRight="4dp"
+                            android:gravity="left"
+                            android:text="Score"
+                            android:textSize="12sp"
+                            app:layout_constraintBottom_toBottomOf="@+id/score"
+                            app:layout_constraintEnd_toStartOf="@+id/score"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="@+id/score" />
+
+                        <com.standardyze.customViews.CustomTextViewMedium
+                            android:id="@+id/score"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginEnd="16dp"
+                            android:layout_marginRight="16dp"
+                            android:layout_marginBottom="16dp"
+                            android:text="0%"
+                            android:textSize="25sp"
+                            android:textColor="@color/colorPrimary"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintVertical_bias="0.0" />
+
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.08" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.96"
+                android:orientation="vertical">
+                <com.standardyze.customViews.CustomTextViewBold
+                    android:id="@+id/customTextViewBold1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginRight="16dp"
+                    android:text=""
+                    android:textStyle="bold" />
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardView5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginRight="14dp"
+                    android:layout_marginBottom="8dp">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/summary">
+
+                        <com.standardyze.customViews.CustomTextViewMedium
+                            android:id="@+id/customTextViewMedium1"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="4dp"
+                            android:layout_marginLeft="4dp"
+                            android:layout_marginEnd="4dp"
+                            android:layout_marginRight="4dp"
+                            android:gravity="left"
+                            android:text="Inspired Services"
+                            android:textSize="12sp"
+                            app:layout_constraintBottom_toBottomOf="@+id/customTextViewMedium3"
+                            app:layout_constraintEnd_toStartOf="@+id/customTextViewMedium3"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="@+id/customTextViewMedium3" />
+
+                        <com.standardyze.customViews.CustomTextViewMedium
+                            android:id="@+id/customTextViewMedium3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginEnd="16dp"
+                            android:layout_marginRight="16dp"
+                            android:layout_marginBottom="16dp"
+                            android:text="0%"
+                            android:textSize="25sp"
+                            android:textColor="@color/colorPrimary"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintVertical_bias="0.0" />
+
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout4"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="14dp"
+            android:layout_marginLeft="14dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="14dp"
+            android:layout_marginRight="14dp"
+            android:background="@color/colorPrimaryDark"
+            android:weightSum="1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout3">
+
+            <com.standardyze.customViews.CustomTextViewMedium
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.8"
+                android:paddingLeft="6dp"
+                android:paddingTop="6dp"
+                android:paddingBottom="6dp"
+                android:text="Categories of Assessments "
+                android:textColor="#FFF" />
+
+            <com.standardyze.customViews.CustomTextViewMedium
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.2"
+                android:paddingTop="6dp"
+                android:paddingRight="6dp"
+                android:paddingBottom="6dp"
+                android:text="Score"
+                android:textAlignment="center"
+                android:textColor="#FFF" />
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_view_score"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:background="@drawable/edtxt_background"
+            app:layout_constraintEnd_toEndOf="@+id/linearLayout4"
+            app:layout_constraintStart_toStartOf="@+id/linearLayout4"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout4"
+            tools:listitem="@layout/pdf_item_categories" />
+
+
+        <com.standardyze.customViews.CustomTextViewBold
+            android:id="@+id/customTextViewBold2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:text="Arrival Service"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/recycler_view_score"
+            app:layout_constraintTop_toBottomOf="@+id/recycler_view_score" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout5"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="14dp"
+            android:layout_marginLeft="14dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="14dp"
+            android:layout_marginRight="14dp"
+            android:background="@color/colorPrimaryDark"
+            android:gravity="center"
+            android:weightSum="1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/customTextViewBold2">
+
+            <com.standardyze.customViews.CustomTextViewMedium
+                android:id="@+id/customTextViewMedium10"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.2"
+                android:text="Responses"
+                android:textColor="#FFF"
+                android:textSize="14sp" />
+
+
+        </LinearLayout>
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_view"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            app:layout_constraintEnd_toEndOf="@+id/linearLayout5"
+            app:layout_constraintStart_toStartOf="@+id/linearLayout5"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout5"
+            tools:listitem="@layout/item_responses" />
+
+        <Button
+            android:id="@+id/bt_take_screenshot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Create PDF"
+            android:visibility= "gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

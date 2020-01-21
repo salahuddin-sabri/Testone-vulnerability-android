@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".activites.verificationActivity">
+
+    <include
+        layout="@layout/background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+
+    </include>
+
+
+    <LinearLayout
+        android:id="@+id/bottom_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+    android:layout_margin="30dp"
+    >
+
+
+        <com.standardyze.customViews.CustomTextViewBook
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/code_txt"
+            android:textColor="#3B4656"
+            android:textSize="15sp" />
+
+        <com.standardyze.customViews.CustomTextViewMedium
+            android:id="@+id/reg_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:text="@string/resend_text"
+            android:textColor="@color/colorPrimary"
+            android:textSize="16sp"
+          />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/verifiaction_txtlayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_margin="15dp"
+      >
+
+        <com.standardyze.customViews.CustomTextViewBook
+            android:id="@+id/verifiaction_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/verification_code"
+
+            android:padding="5dp"
+            android:text="@string/verificationCode_txt"
+            android:textColor="#474748"
+            android:textSize="13sp" />
+
+        <com.standardyze.customViews.CustomTextViewBold
+            android:id="@+id/verification_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/verficationCode"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+           />
+    </RelativeLayout>
+
+        <EditText
+            android:id="@+id/code_edtxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/code"
+            android:layout_below="@id/verifiaction_txtlayout"
+            android:inputType="number"
+            android:textColor="#333"
+            android:textColorHint="@color/colorPrimary"
+            android:textSize="15sp"
+        android:maxLines="1"
+        android:layout_margin="15dp"
+        android:drawableStart="@drawable/email"
+        android:drawablePadding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+            android:drawableLeft="@drawable/email" />
+
+
+    <Button
+        android:id="@+id/verify_btn"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/button_layout"
+        android:text="@string/verify"
+        android:textColor="@android:color/white"
+       android:layout_centerHorizontal="true"
+       android:layout_below="@id/code_edtxt"
+     />
+</RelativeLayout>

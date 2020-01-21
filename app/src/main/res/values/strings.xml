@@ -1,0 +1,97 @@
+<resources>
+    <string name="app_name">Standardyze</string>
+    <string name="remember_me">Remember me</string>
+    <string name="forgot_password">Forgot Password</string>
+    <string name="welcome_txt">Welcome</string>
+    <string name="sign_in_to_continue">Sign in to continue</string>
+    <string name="alert">ALERT</string>
+    <string name="dummytext">dummyText</string>
+    <string name="dg_button_positive_ok">OK</string>
+    <string name="forgot_password_txt">Enter the email associated with your account</string>
+    <string name="account_txt">Already have an account?</string>
+    <string name="recover_password">Recover Password</string>
+    <string name="verficationCode">Verification Code</string>
+    <string name="verificationCode_txt">Please check your email and follow instructions to reset your password</string>
+    <string name="verify">Verify</string>
+    <string name="code_txt" translatable="false">If you didn\'t receive a code!</string>
+    <string name="resend_text">Resend</string>
+    <string name="newPassword_txt">New Password</string>
+    <string name="password_txt">Your password should be 8 characters long,must contain one lowecase letter,one uppercase letter,one numeric digit and one special character.</string>
+    <string name="sign_in">Sign In</string>
+
+    <string name="file_provider_authority" translatable="false">com.standardyze.fileprovider</string>
+    <!--Alert Messages!-->
+    <string name="alert_msg_loginCredentials">Invalid login credentials, please try again.</string>
+    <string name="alert_msg_valid_email">Please enter a valid email address.</string>
+    <string name="alert_msg_invalid_code">Verification code you entered is incorrect.</string>
+    <string name="alert_msg_logout">Are you sure you want to logout?</string>
+    <string name="alert_msg_assessment_details">Please provide your assessment details before proceeding.</string>
+    <string name="alert_msg_add_employee">Please add employees before proceeding further.</string>
+    <string name="alert_msg_information">Please provide required information.</string>
+    <string name="alert_msg_save">Are you sure you want to save without the Room Number?</string>
+    <string name="alert_msg_submitted_response">Assessment submitted successfully</string>
+    <string name="password_change_success">Your Password updated successfully.</string>
+    <string name="alert_msg_save_response">Assessment saved successfully</string>
+    <string name="alert_msg_updated_response">Assessment updated successfully."</string>
+    <string name="alert_msg_saved_error_response">Server error</string>
+    <string name="email">Email Address</string>
+    <string name="update">update</string>
+    <string name="code" translatable="false">Enter your code</string>
+    <string name="standardyze">Standardyze</string>
+    <string name="assessment_app_txt">A service standards assessment app</string>
+    <string name="launch_new_assessment">Launch New Assessment</string>
+    <string name="trainer">Trainer*</string>
+    <string name="property_txt">Property*</string>
+    <string name="score">56.9</string>
+    <string name="assessment_title">Title</string>
+    <string name="status_txt">Saved</string>
+    <string name="confrmPass" translatable="false">Confirm Password"</string>
+    <string name="email_txt">Email:</string>
+    <string name="username">Username:</string>
+    <string name="client_name" translatable="false">Client Name</string>
+    <string name="forgot_pass">Forgot Password?</string>
+    <string name="login_text">Sign in</string>
+    <string name="update_password">Update Password</string>
+    <string name="current_pssw">Current Password</string>
+    <string name="password_length_validation_failed">Your password should be at least 8 characters long, must contain one lowercase letter, one uppercase letter, one numeric digit, and one special character.</string>
+    <string name="info">Your password should be at least 8 characters long, must contain one lowercase
+letter, one uppercase letter, one numeric digit, and one special character.</string>
+    <string name="department">Department*</string>
+    <string name="assessment">Assessment Title*</string>
+    <string name="roles">Roles</string>
+    <string name="bartender">Bartender</string>
+    <string name="cook">Cook</string>
+    <string name="host">Host</string>
+    <string name="conitnue">Continue</string>
+    <string name="assessment_new">New Assessment</string>
+    <string name="employees_list">Employees List</string>
+    <string name="addEmployee">Add Employee</string>
+    <string name="addEmployee_alert">Added Employee(s) saved successfully.</string>
+    <string name="roon_txt">Enter Room Number</string>
+    <string name="meal_period">Meal Period</string>
+    <string name="save">Save</string>
+    <string name="next">Next</string>
+    <string name="arrival_service">Arrival Service</string>
+    <string name="score_txt">Score</string>
+    <string name="inspired_services">Inspired Services</string>
+    <string name="roles_covered">Roles Covered</string>
+    <string name="categories_of_assessments" translatable="false">Categories of Assessments</string>
+    <string name="submit">Submit</string>
+    <string name="close" translatable="false">Close</string>
+    <string name="toast_txt">Are you sure you want to save without the Room Number?</string>
+    <string name="saved">Saved</string>
+    <string name="title">Title</string>
+    <string name="header_title">Standardyze - Service Standards Assessment App</string>
+    <string name="emptyFields">Please fill all required fields.</string>
+    <string name="network">Cleartext HTTP traffic not permitted</string>
+    <string name="checkNetwork">Please check your internet connection</string>
+    <string name="alert_password_match">Your passwords do not match</string>
+    <string name="valid_password">Invalid current password</string>
+    <string name="enteremail">Please enter your email address.</string>
+    <string name="email_not_exist">Email Address does not exist.</string>
+    <string name="dataUptoDate">Data is uptodate.</string>
+    <string name="datasaved">Data saved successfully</string>
+    <string name="alert_msg_are_you_sure_to_submit">Are you sure you want to submit</string>
+    <string name="alert_msg_are_you_sure_to_save">Are you sure you want to save</string>
+    <string name="generalInfo">General Info saved successfully.</string>
+</resources>

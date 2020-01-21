@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.standardyze">
+
+    <uses-permission android:name="android.permission.INTERNET " />
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+
+
+    <application
+        android:allowBackup="true"
+        android:configChanges="orientation"
+        android:icon="@mipmap/icon"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+  android:requestLegacyExternalStorage="true"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:screenOrientation="portrait"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        tools:replace="android:icon">
+
+
+        <activity android:name=".activites.splash">
+
+
+            <intent-filter>
+
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+
+            </intent-filter>
+
+        </activity>
+
+        <activity android:name=".activites.submitted_data" />
+
+        <!--<receiver android:name=".BroadcastReceiver"><intent-filter><action android:name="com.tutorialspoint.CUSTOM_INTENT"></action></intent-filter></receiver> -->
+
+
+        <meta-data
+            android:name="DATABASE"
+            android:value="standardyze.db" />
+
+        <meta-data
+            android:name="VERSION"
+            android:value="3" />
+
+        <meta-data
+            android:name="QUERY_LOG"
+            android:value="true" />
+
+        <meta-data
+            android:name="DOMAIN_PACKAGE_NAME"
+            android:value="com.standardyze" />
+
+        <activity android:name=".activites.pdfActivity"></activity>
+
+        <activity android:name=".activites.summary"
+            android:theme="@style/ChipStyle"
+            />
+
+        <activity
+            android:name=".activites.arrival_service"
+            android:windowSoftInputMode="adjustPan" />
+
+        <activity android:name=".activites.general_information" />
+
+        <activity android:name=".activites.addEmployees"
+            android:windowSoftInputMode="adjustPan"
+            />
+
+        <activity android:name=".activites.new_assessment" />
+
+        <activity android:name=".activites.account_setting" />
+
+        <activity android:name=".activites.newPassword" />
+
+        <activity android:name=".activites.verificationActivity" />
+
+        <activity android:name=".activites.forgotPassword" />
+
+        <activity
+            android:name=".activites.login"
+            android:windowSoftInputMode="adjustPan" />
+
+        <activity android:name=".baseActivity" />
+
+        <activity android:name=".MainActivity" />
+
+        <activity android:name=".activites.savedData"
+            android:windowSoftInputMode="adjustPan"
+            />
+
+        <!-- FileProvider - a ContentProvider for making the image file securely available to the other end -->
+
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.file_paths"
+            android:exported="false"
+            android:grantUriPermissions="true">
+
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+
+        </provider>
+
+        <service
+            android:name="com.amazonaws.mobileconnectors.s3.transferutility.TransferService"
+            android:enabled="true" />
+
+        <activity
+            android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+            android:theme="@style/Base.Theme.AppCompat" />
+
+
+        <provider
+            android:name=".utils.GenericFileProvider"
+            android:authorities="${applicationId}.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_path" />
+
+        </provider>
+
+    </application>
+
+</manifest>

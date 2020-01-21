@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.standardyze.activites.arrival_service">
+
+    <LinearLayout
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimaryDark"
+        android:gravity="right"
+        android:orientation="horizontal">
+
+        <com.standardyze.customViews.CustomTextViewLight
+            android:id="@+id/date_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="15dp"
+            android:text="Dated: 29 SEP 2019"
+            android:textColor="@android:color/white"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <com.victor.loading.rotate.RotateLoading
+        android:id="@+id/rotateloadingAS"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+
+        android:layout_centerInParent="true"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="10dp"
+        app:layout_constraintVertical_bias="0.49"
+        app:loading_color="@color/colorPrimary"
+        app:loading_width="5dp"
+        tools:ignore="UnknownIdInLayout" />
+
+    <com.standardyze.customViews.CustomTextViewBold
+        android:id="@+id/questions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView3"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="10dp"
+        android:visibility="gone"
+        app:layout_constraintVertical_bias="0.49"
+        android:text="No Questionnaire Found"
+        android:textColor="#000"
+        android:textSize="22sp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view_questions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/view"
+        android:elevation="10dp"
+        android:layout_marginBottom="100dp"
+        tools:listitem="@layout/arrival_service_items" />
+
+    <!--<View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:elevation="8dp"
+        android:layout_above="@id/next_btn"
+        android:layout_marginBottom="10dp"
+        android:background="#2626261A"
+        />-->
+    <Button
+        android:id="@+id/next_btn"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/button_layout"
+        android:text="@string/next"
+        android:elevation="10dp"
+        android:textAllCaps="true"
+        android:layout_marginBottom="20dp"
+        android:layout_alignParentBottom="true"
+        android:textColor="@android:color/white"
+
+        />
+
+
+
+</RelativeLayout>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_margin="9dp"
+    android:layout_centerVertical="true"
+    android:layout_height="wrap_content">
+
+    <com.standardyze.customViews.CustomTextViewBook
+        android:id="@+id/employees_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="lorem Ipsum"
+        android:textSize="14sp"
+        android:textColor="#403A54"
+        android:gravity="center_vertical"
+        android:layout_margin="8dp"
+      />
+
+    <CheckBox
+        android:id="@+id/checkbox"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_margin="8dp"
+        android:layout_alignParentRight="true"
+        android:button="@drawable/cb_selector"
+
+
+        android:layout_alignParentEnd="true" />
+</RelativeLayout>

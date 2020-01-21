@@ -1,0 +1,261 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:scrollbars="vertical">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/empty_bg"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <com.standardyze.customViews.CustomTextViewBold
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="8dp"
+            android:text="@string/standardyze"
+            android:textAllCaps="true"
+            android:textColor="@android:color/white"
+            android:textSize="25sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.031"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cardView"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="8dp" />
+
+        <com.standardyze.customViews.CustomTextViewMedium
+            android:id="@+id/textView2"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="5dp"
+            android:text="@string/assessment_app_txt"
+            android:textAllCaps="true"
+            android:textColor="@android:color/white"
+            android:textSize="14sp"
+            android:lineSpacingExtra="7dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.13"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView"
+            android:layout_marginRight="8dp"
+            android:layout_marginLeft="5dp" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            app:cardCornerRadius="10dp"
+            app:layout_constraintBottom_toTopOf="@+id/textView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.074"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.169">
+
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center_vertical|center"
+                android:src="@drawable/frontlogo" />
+        </androidx.cardview.widget.CardView>
+
+
+        <com.standardyze.customViews.CustomTextViewBold
+            android:id="@+id/welcome_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:text="@string/welcome_txt"
+            android:textColor="#434354"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="@+id/textView2"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/textView2"
+            app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+        <com.standardyze.customViews.CustomTextViewBook
+            android:id="@+id/signin_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/welcome_txt"
+            android:text="@string/sign_in_to_continue"
+            android:layout_marginTop="10dp"
+            android:textColor="#474748"
+            android:textSize="13sp"
+            app:layout_constraintEnd_toEndOf="@+id/welcome_txt"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/welcome_txt"
+            app:layout_constraintTop_toBottomOf="@+id/welcome_txt" />
+
+
+        <!--  <com.github.florent37.materialtextfield.MaterialTextField
+                      android:id="@+id/email"
+                      android:layout_width="300dp"
+                      android:layout_height="wrap_content"
+                      android:layout_gravity="center_horizontal"
+                      android:layout_marginEnd="4dp"
+                      app:mtf_cardCollapsedHeight="4dp"
+                      app:mtf_hasFocus="false"
+                      app:mtf_image="@drawable/email"
+                      app:mtf_labelColor="@color/colorPrimary"
+                    >-->
+
+
+        <!--   </com.github.florent37.materialtextfield.MaterialTextField>-->
+
+        <!--   <com.github.florent37.materialtextfield.MaterialTextField
+                       android:id="@+id/password"
+                       android:layout_width="300dp"
+                       android:layout_height="wrap_content"
+                       android:layout_below="@id/email"
+                       android:layout_gravity="center_horizontal"
+                       android:layout_marginEnd="4dp"
+                       android:textColorHint="@color/colorPrimary"
+                       app:mtf_cardCollapsedHeight="4dp"
+                       app:mtf_hasFocus="false"
+                       app:mtf_image="@drawable/password"
+                       app:mtf_labelColor="@color/colorPrimary"
+                      >
+           -->
+
+        <com.victor.loading.rotate.RotateLoading
+            android:id="@+id/rotateloadingLogin"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerInParent="true"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView3"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="20dp"
+            app:layout_constraintHorizontal_bias="0.454"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.499"
+            app:loading_color="@color/colorPrimary"
+            app:loading_width="5dp" />
+
+        <EditText
+            android:id="@+id/email_edtxt"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:drawableStart="@drawable/email"
+            android:drawableLeft="@drawable/email"
+
+            android:drawablePadding="10dp"
+            android:ems="10"
+            android:hint="@string/email"
+            android:inputType="textEmailAddress"
+            android:maxLines="1"
+            android:textColor="@color/colorPrimary"
+            android:textColorHint="@color/colorAccent"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toEndOf="@+id/signin_txt"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/welcome_txt"
+            app:layout_constraintTop_toBottomOf="@+id/signin_txt" />
+
+        <!-- </com.github.florent37.materialtextfield.MaterialTextField>-->
+
+
+        <EditText
+            android:id="@+id/pass_edtxt"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/email_edtxt"
+            android:layout_marginTop="8dp"
+            android:drawableStart="@drawable/password"
+            android:drawableLeft="@drawable/password"
+            android:drawablePadding="10dp"
+            android:ems="10"
+
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:textColor="@color/colorPrimary"
+            android:textColorHint="@color/colorAccent"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toEndOf="@+id/email_edtxt"
+            app:layout_constraintStart_toStartOf="@+id/email_edtxt"
+            app:layout_constraintTop_toBottomOf="@+id/email_edtxt" />
+
+
+        <Button
+            android:id="@+id/signin_btn"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/scrollView"
+            android:layout_gravity="center"
+            android:background="@drawable/btnbordershadow"
+            android:text="@string/sign_in"
+            android:layout_marginTop="32dp"
+            android:textColor="@android:color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.494"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/pass_edtxt" />
+
+
+
+        <CheckBox
+            android:id="@+id/checked"
+            android:padding="3dp"
+            android:textSize="12sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Remember me"
+            android:checked="false"
+            android:button="@drawable/cb_selector"
+            android:textColor="#3B4656"
+            app:layout_constraintEnd_toStartOf="@+id/forgotpassword"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/signin_btn"
+            app:layout_constraintTop_toBottomOf="@+id/signin_btn" />
+
+        <com.standardyze.customViews.CustomTextViewBook
+            android:id="@+id/forgotpassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="40dp"
+            android:layout_marginRight="40dp"
+            android:focusable="true"
+            android:text="@string/forgot_pass"
+            android:textColor="#3B4656"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@+id/checked"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/checked"
+            app:layout_constraintVertical_bias="0.51" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
+
+
